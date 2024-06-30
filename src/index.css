@@ -16,7 +16,3 @@ body {
   transform: translateY(-4px);
 }
 
-.active {
-  width: 16px;
-  background-color: slate-200;
-}
