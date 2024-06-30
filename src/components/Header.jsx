@@ -4,15 +4,17 @@ import { FaHashnode } from "react-icons/fa6";
 import { AppContext } from "../context/AppContext";
 
 const Header = () => {
-  const { refs} = useContext(AppContext)
+  const { refs } = useContext(AppContext);
 
   const [inView, setInView] = useState(null);
 
   // check is a section is in view
   useEffect(() => {
+    console.log("Setting up IntersectionObserver...");
     const handleIntersection = (entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          console.log(`${entry.target.id} is in view`);
           setInView(entry.target.id);
         }
       });
@@ -20,25 +22,26 @@ const Header = () => {
 
     const observer = new IntersectionObserver(handleIntersection, {
       root: null, // Use the viewport as the root
-      threshold: 0.1 // Adjust threshold as needed
+      threshold: 0.1, // Adjust threshold as needed
     });
 
-    Object.values(refs).forEach(ref => {
+    Object.values(refs).forEach((ref) => {
       if (ref.current) {
+        console.log(`Observing ${ref.current.id}`);
         observer.observe(ref.current);
       }
     });
 
     // Cleanup observer on component unmount
     return () => {
-      Object.values(refs).forEach(ref => {
+      console.log("Cleaning up IntersectionObserver...");
+      Object.values(refs).forEach((ref) => {
         if (ref.current) {
           observer.unobserve(ref.current);
         }
       });
     };
-  }, []);
-
+  }, [refs]);
 
   //smooth scrolling
   useEffect(() => {
@@ -92,7 +95,11 @@ const Header = () => {
           className="nav--link group flex items-center gap-4 w-44"
           href="#about"
         >
-          <span className={`${inView === "about" && 'bg-slate-200 w-16' } w-8 bg-slate-600 h-[1px] rounded transition-all group-hover:w-16 group-hover:bg-slate-200`}></span>
+          <span
+            className={`${
+              inView === "about" && "bg-slate-200 w-16"
+            } w-8 bg-slate-600 h-[1px] rounded transition-all group-hover:w-16 group-hover:bg-slate-200`}
+          ></span>
           <span className="group-hover:text-slate-200 tracking-widest">
             about
           </span>
@@ -101,7 +108,11 @@ const Header = () => {
           className="nav--link group flex items-center gap-4 w-44"
           href="#projects"
         >
-          <span className={`${inView === "projects" && 'bg-slate-200 w-16' } w-8 bg-slate-600 h-[1px] rounded transition-all group-hover:w-16 group-hover:bg-slate-200`}></span>
+          <span
+            className={`${
+              inView === "projects" && "bg-slate-200 w-16"
+            } w-8 bg-slate-600 h-[1px] rounded transition-all group-hover:w-16 group-hover:bg-slate-200`}
+          ></span>
           <span className="group-hover:text-slate-200 tracking-widest">
             Projects
           </span>
@@ -110,7 +121,11 @@ const Header = () => {
           className="nav--link group flex items-center gap-4 w-44"
           href="#contact"
         >
-          <span className={`${inView === "contact" && 'bg-slate-200 w-16' } w-8 bg-slate-600 h-[1px] rounded transition-all group-hover:w-16 group-hover:bg-slate-200`}></span>
+          <span
+            className={`${
+              inView === "contact" && "bg-slate-200 w-16"
+            } w-8 bg-slate-600 h-[1px] rounded transition-all group-hover:w-16 group-hover:bg-slate-200`}
+          ></span>
           <span className="group-hover:text-slate-200 tracking-widest">
             Contact
           </span>
