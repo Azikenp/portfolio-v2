@@ -6,9 +6,9 @@ const Project = ({ data }) => {
   return (
     <div>
       {/* mobile screen */}
-      <div className="mb-16 md:hidden">
+      <div className="mb-16 pb-7 border-b-2 border-slate-700 md:hidden">
         <a
-          className="link w-[300px] flex items-center gap-2 text-zinc-200 hover:text-teal-200 font-bold"
+          className="link w-fit flex items-center gap-2 text-zinc-200 hover:text-teal-200 font-bold"
           href={data.liveSite}
           target="_blank"
           rel="noreferrer"
@@ -25,16 +25,16 @@ const Project = ({ data }) => {
           href={data.codeSite}
           target="_blank"
           rel="noreferrer"
-          className="text-[20px] hover:text-teal-200 hover:scale-75"
+          className="group text-[20px] hover:text-teal-200 block w-fit" 
         >
-          <FaGithub className="mt-4 hover:scale-[110%] transition-all" />
+          <FaGithub className="mt-4 group-hover:scale-[110%] transition-all" />
         </a>
       </div>
 
       {/* tablets */}
       <div className="hidden md:flex lg:hidden flex-col mb-16 lg:p-5 lg:hover:bg-slate-800/50 transition-all ease-in-out rounded">
         <div className="flex gap-6">
-          <div className="w-[300px] h-[100px] lg:w-[350px] lg:h-[50px]">
+          <div className="min-w-[200px] h-[100px] lg:w-[350px] lg:h-[50px]">
             <img
               className="h-[100%] w-[100%]  rounded"
               src={data.src}
@@ -46,14 +46,14 @@ const Project = ({ data }) => {
               href={data.liveSite}
               target="_blank"
               rel="noreferrer"
-              className="link w-[300px] flex gap-2 items-center text-zinc-200 font-[500] hover:text-teal-200 text-[18px] mb-2"
+              className="link w-fit flex gap-2 items-center text-zinc-200 font-[500] hover:text-teal-200 text-[18px] mb-2"
             >
               <h2>{data.title}</h2>
               <FiArrowUpRight id="arrow-up-right" className="transition-all" />
             </a>
             <p className="mb-2">{data.text}</p>
             <a
-              className="text-[18px] hover:text-teal-200 hover:scale-75"
+              className="text-[18px] hover:text-teal-200 block w-fit"
               href={data.codeSite}
               target="_blank"
               rel=" noreferrer"
@@ -80,13 +80,13 @@ const Project = ({ data }) => {
             />
           </div>
           <div>
-            <div className="link flex gap-2 items-center text-zinc-200 font-[500] hover:text-teal-200 text-[18px] mb-2">
+            <div className="link w-fit flex gap-2 items-center text-zinc-200 font-[500] hover:text-teal-200 text-[18px] mb-2">
               <h2>{data.title}</h2>
               <FiArrowUpRight id="arrow-up-right" className="transition-all" />
             </div>
             <p className="mb-2">{data.text}</p>
             <a
-              className="text-[18px] hover:text-teal-200 hover:scale-75"
+              className="text-[18px] hover:text-teal-200 block w-fit"
               href={data.codeSite}
               target="_blank"
               rel=" noreferrer"
