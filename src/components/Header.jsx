@@ -8,6 +8,7 @@ const Header = () => {
 
   const [inView, setInView] = useState(null);
 
+  // check is a section is in view
   useEffect(() => {
     const handleIntersection = (entries) => {
       entries.forEach(entry => {
@@ -38,12 +39,6 @@ const Header = () => {
     };
   }, []);
 
-  useEffect(() => {
-    if (inView) {
-      // Perform actions based on which section is in view
-      console.log(`${inView} is in view!`);
-    }
-  }, [inView]);
 
   //smooth scrolling
   useEffect(() => {
