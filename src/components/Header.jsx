@@ -10,11 +10,9 @@ const Header = () => {
 
   // check is a section is in view
   useEffect(() => {
-    console.log("Setting up IntersectionObserver...");
     const handleIntersection = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          console.log(`${entry.target.id} is in view`);
           setInView(entry.target.id);
         }
       });
@@ -27,21 +25,19 @@ const Header = () => {
 
     Object.values(refs).forEach((ref) => {
       if (ref.current) {
-        console.log(`Observing ${ref.current.id}`);
         observer.observe(ref.current);
       }
     });
 
     // Cleanup observer on component unmount
     return () => {
-      console.log("Cleaning up IntersectionObserver...");
       Object.values(refs).forEach((ref) => {
         if (ref.current) {
           observer.unobserve(ref.current);
         }
       });
     };
-  }, [refs]);
+  }, []);
 
   //smooth scrolling
   useEffect(() => {
@@ -97,8 +93,8 @@ const Header = () => {
         >
           <span
             className={`${
-              inView === "about" && "bg-slate-200 w-16"
-            } w-8 bg-slate-600 h-[1px] rounded transition-all group-hover:w-16 group-hover:bg-slate-200`}
+              inView === "about" ? "bg-slate-200 w-16" : "w-8 bg-slate-600"
+            }  h-[1px] rounded transition-all group-hover:w-16 group-hover:bg-slate-200`}
           ></span>
           <span className="group-hover:text-slate-200 tracking-widest">
             about
@@ -110,8 +106,8 @@ const Header = () => {
         >
           <span
             className={`${
-              inView === "projects" && "bg-slate-200 w-16"
-            } w-8 bg-slate-600 h-[1px] rounded transition-all group-hover:w-16 group-hover:bg-slate-200`}
+              inView === "projects" ? "bg-slate-200 w-16" : "w-8 bg-slate-600"
+            }  h-[1px] rounded transition-all group-hover:w-16 group-hover:bg-slate-200`}
           ></span>
           <span className="group-hover:text-slate-200 tracking-widest">
             Projects
@@ -123,8 +119,8 @@ const Header = () => {
         >
           <span
             className={`${
-              inView === "contact" && "bg-slate-200 w-16"
-            } w-8 bg-slate-600 h-[1px] rounded transition-all group-hover:w-16 group-hover:bg-slate-200`}
+              inView === "contact" ? "bg-slate-200 w-16" : "w-8 bg-slate-600"
+            }  h-[1px] rounded transition-all group-hover:w-16 group-hover:bg-slate-200`}
           ></span>
           <span className="group-hover:text-slate-200 tracking-widest">
             Contact
