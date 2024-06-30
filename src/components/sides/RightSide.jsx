@@ -3,6 +3,7 @@ import About from "../About";
 import Projects from "../Projects";
 import Contact from "../Contact";
 import Stack from "../Stack";
+import Footer from "../Footer";
 
 const RightSide = () => {
   return (
@@ -11,6 +12,7 @@ const RightSide = () => {
       <Stack />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 };
