@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../context/AppContext";
 
 const About = () => {
+let {remove} = useContext(AppContext)
+console.log(remove);
+
   return (
     <section id="about" className="lg:px-5">
       <h1 className="uppercase text-zinc-200 font-bold text-[14px] mb-8 lg:hidden">
