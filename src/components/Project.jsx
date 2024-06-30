@@ -6,7 +6,7 @@ const Project = ({ data }) => {
   return (
     <div>
       {/* mobile screen */}
-      <div className="mb-16 pb-7 border-b-2 border-slate-700 md:hidden">
+      <div className="mb-16 pb-7 border-b-[1px] border-slate-700 md:hidden">
         <a
           className="link w-fit flex items-center gap-2 text-zinc-200 hover:text-teal-200 font-bold"
           href={data.liveSite}
@@ -32,7 +32,7 @@ const Project = ({ data }) => {
       </div>
 
       {/* tablets */}
-      <div className="hidden md:flex lg:hidden flex-col mb-16 lg:p-5 lg:hover:bg-slate-800/50 transition-all ease-in-out rounded">
+      <div className="hidden md:flex lg:hidden flex-col mb-24 lg:p-5 lg:hover:bg-slate-800/50 transition-all ease-in-out  pb-7 border-b-[1px] border-slate-700">
         <div className="flex gap-6">
           <div className="min-w-[200px] h-[100px] lg:w-[350px] lg:h-[50px]">
             <img

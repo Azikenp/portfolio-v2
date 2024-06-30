@@ -39,7 +39,7 @@ const Header = () => {
 
   return (
     <header className="pr-16 mb-32 lg:h-[100vh]">
-      <h2 className="capitalize text-[32px] lg:text-[41px] font-bold mb-2 tracking-wide text-slate-200">
+      <h2 className="capitalize text-[29px] lg:text-[41px] font-bold mb-2 tracking-wide text-slate-200">
         Aziken Precious
       </h2>
       <h4 className="text-[18px] lg:text-[22px] font-bold mb-4 text-slate-200">
