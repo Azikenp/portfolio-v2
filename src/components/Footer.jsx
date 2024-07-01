@@ -17,7 +17,16 @@ const Footer = () => {
         <span className="tracking-wide text-slate-200/90">Inter</span> font
         family.
       </p>
-      <p className="mt-2 text-slate-200/90 text-[10px]">&copy; Aziken Precious 2024</p>
+
+      <p className="text-[14px] mt-2">
+        Inspired by{" "}
+        <a className="text-slate-200/90" href="https://brittanychiang.com/" target="_blank" rel="noreferrer">
+          Brittany chiang
+        </a>.
+      </p>
+      <p className="mt-2 text-slate-200/90 text-[10px]">
+        &copy; Aziken Precious 2024
+      </p>
     </div>
   );
 };
