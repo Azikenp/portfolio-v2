@@ -36,4 +36,4 @@ export const data = [
   },
 ];
 
-export const techStack = ["Html", "Css", "javasript", "sass", "git", "github", "bootstrap", "react", "Material ui", "tailwind", "Next.js", "gsap", "three.js", "framer motion"];
+export const techStack = ["Html", "Css", "javasript","typeScript", "sass", "git", "github", "bootstrap", "react", "Material ui", "tailwind", "Next.js", "gsap", "three.js", "framer motion"];
