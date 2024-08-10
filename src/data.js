@@ -1,6 +1,6 @@
 export const data = [
   {
-    src: "../public/assets/travel-img.PNG",
+    src: "./assets/travel-img.PNG",
     title: "Travel Landing Page",
     text: "Built with Next.js, Tailwind CSS, and TypeScript, it offers a seamless and visually stunning experience, with a user-friendly interface designed to enhance your journey.",
     liveSite: "https://travvvel.vercel.app/",
