@@ -1,5 +1,12 @@
 export const data = [
   {
+    src: "../public/assets/travel-img.PNG",
+    title: "Travel Landing Page",
+    text: "Built with Next.js, Tailwind CSS, and TypeScript, it offers a seamless and visually stunning experience, with a user-friendly interface designed to enhance your journey.",
+    liveSite: "https://travvvel.vercel.app/",
+    codeSite: "https://github.com/Azikenp/travel_app",
+  },
+  {
     src: "./assets/crypto-zazoo.png",
     title: "Crypto zazuu",
     text: "Discover trending coins and access comprehensive details about each coin, including market trends and also bookmark your favorite coins for quick access to it.",
@@ -12,13 +19,6 @@ export const data = [
     text: "This app fetches news feeds from the Hacker News API, debouncing to deliver 500 headlines at +30 per scroll, ensuring swift and responsive updates.",
     liveSite: "https://news-update-azikenp.vercel.app/",
     codeSite: "https://github.com/Azikenp/news-update.git",
-  },
-  {
-    src: "./assets/dictionary.png",
-    title: "Dictionary app",
-    text: "An innovative dictionary app that delivers instant search results for any English word. Utilizing the powerful dictionaryapi.dev API to do this.",
-    liveSite: "https://dictionary-react-azikenp.vercel.app/",
-    codeSite: "https://github.com/Azikenp/dictionary-react.git",
   },
   {
     src: "./assets/weather.png",
@@ -36,4 +36,21 @@ export const data = [
   },
 ];
 
-export const techStack = ["Html", "Css", "javasript","typeScript", "sass", "git", "github", "bootstrap", "react", "Material ui", "tailwind", "Next.js", "gsap", "three.js", "framer motion", "Aceternity Ui"];
+export const techStack = [
+  "Html",
+  "Css",
+  "javasript",
+  "typeScript",
+  "sass",
+  "git",
+  "github",
+  "bootstrap",
+  "react",
+  "Material ui",
+  "tailwind",
+  "Next.js",
+  "gsap",
+  "three.js",
+  "framer motion",
+  "Aceternity Ui",
+];
