@@ -50,7 +50,6 @@ export const techStack = [
   "tailwind",
   "Next.js",
   "gsap",
-  "three.js",
   "framer motion",
   "Aceternity Ui",
 ];
