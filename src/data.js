@@ -52,4 +52,5 @@ export const techStack = [
   "gsap",
   "framer motion",
   "Aceternity Ui",
+  "shadCn"
 ];
