@@ -41,7 +41,7 @@ export const techStack = [
   "Css",
   "javasript",
   "typeScript",
-  "sass",
+  "sass/scss",
   "git",
   "github",
   "bootstrap",
