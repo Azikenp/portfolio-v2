@@ -5,12 +5,12 @@ export const data = [
     text: "Built with Next.js, Tailwind CSS, and TypeScript, it offers a seamless and visually stunning experience, with a user-friendly interface designed to enhance your journey.",
     liveSite: "https://travvvel.vercel.app/",
     codeSite: "https://github.com/Azikenp/travel_app",
-
+    tools: ["Next js", "typescript", "tailwind"],
   },
   {
-    src: "./assets/crypto-zazoo.png",
-    title: "Crypto zazuu",
-    text: "Discover trending coins and access comprehensive details about each coin, including market trends and also bookmark your favorite coins for quick access to it.",
+    src: "./assets/crypto-verse-v2.PNG",
+    title: "Crypto Verse-v2",
+    text: "Discover trending coins and access comprehensive details about each coin, including market trends and price history.",
     liveSite: "https://crypt-verse-v2.vercel.app/",
     codeSite: "https://github.com/Azikenp/cryptVerse-v2.git",
     tools: ["React", "Redux-toolkit", "Antd", "Coinranking Api"],
@@ -21,6 +21,7 @@ export const data = [
     text: "This app fetches news feeds from the Hacker News API, debouncing to deliver 500 headlines at +30 per scroll, ensuring swift and responsive updates.",
     liveSite: "https://news-update-azikenp.vercel.app/",
     codeSite: "https://github.com/Azikenp/news-update.git",
+    tools: ["React", "styled components"],
   },
   {
     src: "./assets/weather.png",

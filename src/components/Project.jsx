@@ -1,4 +1,3 @@
-import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiArrowUpRight } from "react-icons/fi";
 
@@ -25,10 +24,21 @@ const Project = ({ data }) => {
           href={data.codeSite}
           target="_blank"
           rel="noreferrer"
-          className="group text-[20px] hover:text-teal-200 block w-fit" 
+          className="group text-[20px] hover:text-teal-200 block w-fit"
         >
           <FaGithub className="mt-4 group-hover:scale-[110%] transition-all" />
         </a>
+
+        <div className="flex gap-2 mt-4">
+          {data.tools?.map((tool, i) => (
+            <p
+              className="flex text-teal-300 bg-teal-400/10 text-[12px] capitalize w-fit py-2 px-3 rounded-full"
+              key={i}
+            >
+              {tool}
+            </p>
+          ))}
+        </div>
       </div>
 
       {/* tablets */}
@@ -60,6 +70,17 @@ const Project = ({ data }) => {
             >
               <FaGithub className="mt-4 hover:scale-[110%] transition-all" />
             </a>
+
+            <div className="flex gap-2 mt-4">
+              {data.tools?.map((tool, i) => (
+                <p
+                  className="flex text-teal-300 bg-teal-400/10 text-[12px] capitalize w-fit py-2 px-3 rounded-full"
+                  key={i}
+                >
+                  {tool}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -72,7 +93,7 @@ const Project = ({ data }) => {
           target="_blank"
           rel="noreferrer"
         >
-          <div className="min-w-[100px] h-[100px] lg:w-[350px] lg:h-[50px]">
+          <div className="min-w-[100px] h-[100px] lg:max-w-[350px] lg:h-[50px]">
             <img
               className="h-[100%] w-[100%]  rounded"
               src={data.src}
@@ -80,7 +101,7 @@ const Project = ({ data }) => {
             />
           </div>
           <div>
-            <div className="link w-fit flex gap-2 items-center text-zinc-200 font-[500] hover:text-teal-200 text-[18px] mb-2">
+            <div className="link w-fit flex   gap-2 items-center text-zinc-200 font-[500] hover:text-teal-200 text-[18px] mb-2">
               <h2>{data.title}</h2>
               <FiArrowUpRight id="arrow-up-right" className="transition-all" />
             </div>
@@ -93,6 +114,17 @@ const Project = ({ data }) => {
             >
               <FaGithub className="mt-4 hover:scale-[110%] transition-all" />
             </a>
+
+            <div className="flex gap-2 mt-4">
+              {data.tools?.map((tool, i) => (
+                <p
+                  className="flex text-teal-300 bg-teal-400/10 text-[12px] capitalize w-fit py-2 px-3 rounded-full"
+                  key={i}
+                >
+                  {tool}
+                </p>
+              ))}
+            </div>
           </div>
         </a>
       </div>
