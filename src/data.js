@@ -5,13 +5,15 @@ export const data = [
     text: "Built with Next.js, Tailwind CSS, and TypeScript, it offers a seamless and visually stunning experience, with a user-friendly interface designed to enhance your journey.",
     liveSite: "https://travvvel.vercel.app/",
     codeSite: "https://github.com/Azikenp/travel_app",
+
   },
   {
     src: "./assets/crypto-zazoo.png",
     title: "Crypto zazuu",
     text: "Discover trending coins and access comprehensive details about each coin, including market trends and also bookmark your favorite coins for quick access to it.",
-    liveSite: "https://crypto-bucks-azikenp.vercel.app/",
-    codeSite: "https://github.com/Azikenp/crypto-bucks.git",
+    liveSite: "https://crypt-verse-v2.vercel.app/",
+    codeSite: "https://github.com/Azikenp/cryptVerse-v2.git",
+    tools: ["React", "Redux-toolkit", "Antd", "Coinranking Api"],
   },
   {
     src: "./assets/hackerNews.png",
@@ -53,5 +55,5 @@ export const techStack = [
   "Material ui",
   "gsap",
   "Aceternity Ui",
-  "shadCn"
+  "shadCn",
 ];
