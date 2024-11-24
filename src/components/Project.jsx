@@ -29,7 +29,7 @@ const Project = ({ data }) => {
           <FaGithub className="mt-4 group-hover:scale-[110%] transition-all" />
         </a>
 
-        <div className="flex gap-2 mt-4">
+        <div className="flex flex-wrap gap-2 mt-4">
           {data.tools?.map((tool, i) => (
             <p
               className="flex text-teal-300 bg-teal-400/10 text-[12px] capitalize w-fit py-2 px-3 rounded-full"
