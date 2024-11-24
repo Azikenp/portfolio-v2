@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="lg:px-5 mt-28 md:mt-40 lg:mt-60">
       <p className="text-[14px]">
-        This website was written in{" "}
+        This website code was written entirely from scratch by Me in{" "}
         <span className="tracking-wide text-slate-200/90">
           Visual studio code{" "}
         </span>
