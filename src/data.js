@@ -32,13 +32,6 @@ export const data = [
     tools: ["React", "styled components"],
   },
   {
-    src: "./assets/weather.png",
-    title: "Mini weather app",
-    text: "An advanced weather app, which uses OpenWeatherAPI and RaidAPI to deliver precise and up-to-date weather forecasts. With accurate predictions for temperature, you can stay informed with real-time updates and detailed weather conditions to fit your location.",
-    liveSite: "https://weather-app-azikenp.vercel.app/",
-    codeSite: "https://github.com/Azikenp/weather-app.git",
-  },
-  {
     src: "./assets/bookhub.png",
     title: "Book library",
     text: "A book search app, which utilizes the OpenLibrary API to help you find your next great read. Search for books by title and access detailed information about the searched book",
