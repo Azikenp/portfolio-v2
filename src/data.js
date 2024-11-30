@@ -8,6 +8,14 @@ export const data = [
     tools: ["Next js", "typescript", "tailwind"],
   },
   {
+    src: "./assets/summarizer.PNG",
+    title: "Summarizer",
+    text: "This is an project which extracts news/article body from a URL and uses GPT to summarize the article content. Useful for text mining purposes. Leverages powerful and flexible web scraping engine (ScrapeNinja.net) with high-quality rotating proxies under the hood",
+    liveSite: "https://summarizer-001.vercel.app/",
+    codeSite: "https://github.com/Azikenp/AI-summarizer.git",
+    tools: ["React", "Redux-toolkit", "tailwind"],
+  },
+  {
     src: "./assets/crypto-verse-v2.PNG",
     title: "Crypto Verse-v2",
     text: "Discover trending coins and access comprehensive details about each coin, including market trends and price history.",
