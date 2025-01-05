@@ -24,19 +24,20 @@ export const data = [
     tools: ["React", "Redux-toolkit", "Antd", "Coinranking Api"],
   },
   {
+    src: "./assets/disney-plus.png",
+    title: "Disney Plus",
+    text: "A captivating Disney+ clone built with the TMDB API, showcasing a dynamic range of movie categories on an immersive and interactive landing page.",
+    liveSite: "https://disney-plus-weld.vercel.app/",
+    codeSite: "https://github.com/Azikenp/disney-plus.git",
+    tools: ["React", "TMBD"],
+  },
+  {
     src: "./assets/hackerNews.png",
     title: "Hackernews",
     text: "This app fetches news feeds from the Hacker News API, debouncing to deliver 500 headlines at +30 per scroll, ensuring swift and responsive updates.",
     liveSite: "https://news-update-azikenp.vercel.app/",
     codeSite: "https://github.com/Azikenp/news-update.git",
     tools: ["React", "styled components"],
-  },
-  {
-    src: "./assets/bookhub.png",
-    title: "Book library",
-    text: "A book search app, which utilizes the OpenLibrary API to help you find your next great read. Search for books by title and access detailed information about the searched book",
-    liveSite: "https://book-library-azikenp.vercel.app/",
-    codeSite: "https://github.com/Azikenp/book-library.git",
   },
 ];
 
