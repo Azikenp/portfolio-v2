@@ -8,7 +8,7 @@ export const data = [
     tools: ["Next js", "typescript", "tailwind"],
   },
   {
-    src: "./assets/sounds.PNG",
+    src: "./assets/sounds.png",
     title: "Sounds",
     text: "Built with Next.js, Sanity, and Stripe, this eCommerce site delivers a smooth shopping experience with dynamic content, secure payments, and a sleek, user-friendly design.",
     liveSite: "https://sounds-eight.vercel.app/",
