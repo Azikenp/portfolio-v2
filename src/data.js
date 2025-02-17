@@ -8,6 +8,14 @@ export const data = [
     tools: ["Next js", "typescript", "tailwind"],
   },
   {
+    src: "./assets/sounds.PNG",
+    title: "Sounds",
+    text: "Built with Next.js, Sanity, and Stripe, this eCommerce site delivers a smooth shopping experience with dynamic content, secure payments, and a sleek, user-friendly design.",
+    liveSite: "https://sounds-eight.vercel.app/",
+    codeSite: "https://github.com/Azikenp/ecommerce",
+    tools: ["Next js", "Sanity", "Stripe"],
+  },
+  {
     src: "./assets/summarizer.PNG",
     title: "Summarizer",
     text: "This is an project which extracts news/article body from a URL and uses GPT to summarize the article content. Useful for text mining purposes. Leverages powerful and flexible web scraping engine (ScrapeNinja.net) with high-quality rotating proxies under the hood",
@@ -52,6 +60,7 @@ export const techStack = [
   "sass/scss",
   "bootstrap",
   "redux",
+  "Stripe",
   "framer motion",
   "git",
   "github",
