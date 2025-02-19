@@ -59,6 +59,7 @@ export const techStack = [
   "tailwind",
   "sass/scss",
   "bootstrap",
+  "firebase",
   "redux",
   "sanity",
   "stripe",
