@@ -50,8 +50,8 @@ export const data = [
 ];
 
 export const techStack = [
-  "Html",
-  "Css",
+  "html",
+  "css",
   "javasript",
   "typeScript",
   "react",
@@ -68,6 +68,6 @@ export const techStack = [
   "github",
   "Material ui",
   "gsap",
-  "Aceternity Ui",
+  "aceternity ui",
   "shadCn",
 ];
