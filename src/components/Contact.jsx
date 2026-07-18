@@ -1,16 +1,16 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { FaEnvelope } from "react-icons/fa";
 import { AppContext } from "../context/AppContext";
 
 const Contact = () => {
-  const {refs} = useContext(AppContext)
+  const { refs } = useContext(AppContext);
   return (
     <div ref={refs.section3} id="contact" className="lg:px-5 lg:mt-[200px]">
       <h2 className="uppercase text-zinc-200 font-bold text-[14px] mb-8 mt-24 lg:hidden">
         Contact Me
       </h2>
       <h4 className="text-slate-200 mb-4 text-[30px] lg:text-[44px]">
-        Let's Discuss
+        Let&apos;s Discuss
       </h4>
       <a
         href="mailto:azikenp26@gmail.com"

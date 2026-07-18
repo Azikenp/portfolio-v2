@@ -1,5 +1,3 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <div className="lg:px-5 mt-28 md:mt-40 lg:mt-60">
@@ -20,9 +18,15 @@ const Footer = () => {
 
       <p className="text-[14px] mt-2">
         Inspired by{" "}
-        <a className="text-slate-200/90" href="https://brittanychiang.com/" target="_blank" rel="noreferrer">
+        <a
+          className="text-slate-200/90"
+          href="https://brittanychiang.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
           Brittany chiang
-        </a>.
+        </a>
+        .
       </p>
       <p className="mt-2 text-slate-200/90 text-[10px]">
         &copy; Aziken Precious 2024

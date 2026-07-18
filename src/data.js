@@ -1,5 +1,21 @@
 export const data = [
   {
+    src: "./assets/spylt.png",
+    title: "SPYLT",
+    text: "SPYLT is a high-energy, immersive marketing website for the SPYLT drink brand. Built with a focus on bold visual storytelling, the site features scroll-driven animations, interactive flavor showcases, and video testimonials — all designed to capture the adventurous and nostalgic spirit of the brand.",
+    liveSite: "https://spylt-theta-wheat.vercel.app",
+    codeSite: "https://github.com/Azikenp/spylt",
+    tools: ["Next js", "typescript", "tailwind", "gsap"],
+  },
+  {
+    src: "./assets/instant-receipt.png",
+    title: "Instant Receipt Generator",
+    text: "A modern web application for generating instant receipts with a clean and intuitive interface.",
+    liveSite: "https://instant-receipt.vercel.app",
+    codeSite: "https://github.com/Azikenp/InstantReceipt",
+    tools: ["Next js", "typescript", "tailwind", "jspdf", "html2canvas-pro"],
+  },
+  {
     src: "./assets/travel-img.PNG",
     title: "Travel Landing Page",
     text: "Built with Next.js, Tailwind CSS, and TypeScript, it offers a seamless and visually stunning experience, with a user-friendly interface designed to enhance your journey.",
@@ -30,14 +46,6 @@ export const data = [
     liveSite: "https://crypt-verse-v2.vercel.app/",
     codeSite: "https://github.com/Azikenp/cryptVerse-v2.git",
     tools: ["React", "Redux-toolkit", "Antd", "Coinranking Api"],
-  },
-  {
-    src: "./assets/disney-plus.png",
-    title: "Disney Plus",
-    text: "A captivating Disney+ clone built with the TMDB API, showcasing a dynamic range of movie categories on an immersive and interactive landing page.",
-    liveSite: "https://disney-plus-weld.vercel.app/",
-    codeSite: "https://github.com/Azikenp/disney-plus.git",
-    tools: ["React", "TMBD"],
   },
   {
     src: "./assets/hackerNews.png",

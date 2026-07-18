@@ -4,7 +4,7 @@ const Stack = () => {
   return (
     <div className="lg:px-5 lg:mt-[150px] mb-24">
       <h2 className="uppercase text-zinc-200 font-bold text-[14px]  lg:text-[24px] mb-8 mt-24">
-        Technologies i use
+        Tools
       </h2>
       <div className="flex flex-wrap gap-3">
         {techStack.map((stacks, i) => {

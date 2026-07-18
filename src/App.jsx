@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import LeftSide from "./components/sides/LeftSide";
 import RightSide from "./components/sides/RightSide";
 import { motion } from "framer-motion";

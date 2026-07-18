@@ -1,9 +1,10 @@
-import React, { useContext, useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { AppContext } from "../context/AppContext";
 
 const About = () => {
   const elementRef = useRef(null);
-  const {hasParentWithId, checkParentId, setHasParentWithId, refs} = useContext(AppContext)
+  const { hasParentWithId, checkParentId, setHasParentWithId, refs } =
+    useContext(AppContext);
   // console.log(hasParentWithId);
 
   useEffect(() => {
@@ -20,7 +21,7 @@ const About = () => {
 
     const observer = new IntersectionObserver(handleIntersection, {
       root: null, // Use the viewport as the root
-      threshold: 0.1 // Adjust threshold as needed
+      threshold: 0.1, // Adjust threshold as needed
     });
 
     if (elementRef.current) {
@@ -35,7 +36,6 @@ const About = () => {
     };
   }, [checkParentId, setHasParentWithId]);
 
-
   // const handleScroll = () => {
   //   let idSection = "about"
   //   if (elementRef.current) {
@@ -46,7 +46,7 @@ const About = () => {
 
   // useEffect(() => {
   //   window.addEventListener('scroll', handleScroll);
-    
+
   //   // Initial check
   //   handleScroll();
 
@@ -55,7 +55,6 @@ const About = () => {
   //     window.removeEventListener('scroll', handleScroll);
   //   };
   // }, []);
-  
 
   return (
     <section ref={refs.section1} id="about" className="lg:px-5">
@@ -65,7 +64,8 @@ const About = () => {
         </h1>
 
         <p className="mb-4 lg:mb-6">
-          I am a skilled Software Engineer with a deep passion for software development, i have honed my skills in creating beautiful, intuitive
+          I am a skilled Software Engineer with a deep passion for software
+          development, i have honed my skills in creating beautiful, intuitive
           user interfaces using the latest technologies. With a strong
           commitment to learning and growth, i am always seeking new
           opportunities to expand my skills and contribute to meaningful
