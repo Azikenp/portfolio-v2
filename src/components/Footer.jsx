@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="lg:px-5 mt-28 md:mt-40 lg:mt-60">
+    <div className="lg:px-5 mt-28 md:mt-20">
       <p className="text-[14px]">
         This website code was written entirely from scratch by Me in{" "}
         <span className="tracking-wide text-slate-200/90">

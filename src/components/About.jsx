@@ -64,12 +64,7 @@ const About = () => {
         </h1>
 
         <p className="mb-4 lg:mb-6">
-          I am a skilled Software Engineer with a deep passion for software
-          development, i have honed my skills in creating beautiful, intuitive
-          user interfaces using the latest technologies. With a strong
-          commitment to learning and growth, i am always seeking new
-          opportunities to expand my skills and contribute to meaningful
-          projects.
+           Software Engineer with 4 years of experience building scalable, responsive web applications using React, Next.js, TypeScript, and modern frontend technologies. Experienced in developing enterprise applications across fintech, identity management, and HR systems. Proven track record delivering solutions for 2,000+ users at major financial institutions. Experienced in building reusable component libraries, optimizing web performance, and implementing WCAG-compliant interfaces. Passionate about clean code, modern development practices, and mentoring junior developers.
         </p>
 
         <p className="mb-4 lg:mb-6">
